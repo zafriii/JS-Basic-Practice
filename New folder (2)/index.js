@@ -23,3 +23,20 @@ let phnNo = 8801977770;
 
 console.log(num(34,78,56));
 
+//IIFE => Global scope's polutions make problems sometimes so if there is any variable/anything declared we use IIFE to avoid that polution.
+
+(
+   function print(){
+         console.log("Print")
+   }//print()= named IIFE
+
+)(); // to break the IIFE we use ;
+
+((name)=>{
+
+   console.log("Print Again", name)
+
+})("Niha") //Now we can run this
+
+
+//Named IIFE, Unnamed IIFE, Passing parameters,  Return values, writing 2 IIFEs togather
