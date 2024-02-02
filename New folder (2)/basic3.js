@@ -138,3 +138,17 @@ console.log(cars.reverse())
 
 console.log(fruits.sort());
 console.log(fruits.reverse());
+
+
+//Array Filter
+
+const arr = [10,20,34,55,89,90]
+
+const newArr1= arr.filter((item)=>{
+    if(item%2==0){
+        return item;
+    }
+})
+
+
+console.log(newArr1)
