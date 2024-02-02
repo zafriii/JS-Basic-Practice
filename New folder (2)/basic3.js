@@ -140,15 +140,23 @@ console.log(fruits.sort());
 console.log(fruits.reverse());
 
 
-//Array Filter
+//Array Map, Filter , Reduce
 
 const arr = [10,20,34,55,89,90]
 
-const newArr1= arr.filter((item)=>{
+const newArr1 = arr.map((item) => {
+        return item +2;
+})
+
+const newArr2 = newArr1.filter((item)=>{
     if(item%2==0){
         return item;
     }
 })
 
+const newArr3 = newArr1.reduce((acc,curVal)=> acc+curVal,0)
+
 
 console.log(newArr1)
+console.log(newArr2)
+console.log(newArr3)
