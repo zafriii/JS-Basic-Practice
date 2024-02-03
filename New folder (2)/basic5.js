@@ -1,4 +1,4 @@
-//setInterval
+//setInterval -> Will execute after every 2 secs
 
 setInterval( () => {
     console.log("I love Js")
@@ -7,7 +7,7 @@ setInterval( () => {
 )
 
 
-//setTimeout
+//setTimeout -> Will execute after 2 secs once
 
 setTimeout( () => {
     console.log("I love Js")
